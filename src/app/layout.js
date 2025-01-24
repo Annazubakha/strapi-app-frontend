@@ -1,5 +1,6 @@
 import { Geist_Mono } from "next/font/google";
-import "./styles/globals.css";
+import "../styles/globals.css";
+import ClientApolloProvider from "@/components/ClientApolloPrivider";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -15,7 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistMono.variable}`}>
-        <main>{children}</main>
+        <ClientApolloProvider>
+          <main>{children}</main>
+        </ClientApolloProvider>
       </body>
     </html>
   );
