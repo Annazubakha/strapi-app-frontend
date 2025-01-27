@@ -12,7 +12,9 @@ export const PostItem = ({ post }) => {
       </div>
       <ul className={styles.tags}>
         {post.tags.map((tag) => (
-          <li key={tag.documentId}>{tag.name}</li>
+          <Link href={`/tag/${tag.documentId}`} key={tag.documentId}>
+            {tag.name}
+          </Link>
         ))}
       </ul>
     </li>
