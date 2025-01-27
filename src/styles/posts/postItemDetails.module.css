@@ -27,6 +27,22 @@
 .read_more {
   text-decoration: underline;
 }
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.views_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.views {
+  background-color: #8c8b8b;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: left;
+  font-weight: 600;
+}
 .tags {
   list-style: none;
   display: flex;

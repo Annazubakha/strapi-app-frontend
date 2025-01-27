@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  z-index: 5000;
+  background-color: var(--text-color);
+  width: 100vw;
+  padding: 20px 0;
+}
+
+.list {
+  max-width: 1280px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
