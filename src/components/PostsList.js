@@ -22,6 +22,7 @@ const POSTS = gql`
 
 export default function PostsList() {
   const { data, isLoading } = useQuery(POSTS);
+
   if (isLoading) return <p> Loading...</p>;
   return (
     <ul className={styles.list}>

@@ -19,13 +19,12 @@ const POST = gql`
     }
   }
 `;
+
 export const PostItemDetails = () => {
   const { slug } = useParams();
-
   const { data, isLoading } = useQuery(POST, {
     variables: { documentId: slug },
   });
-  console.log(data);
   if (isLoading) return <p> Loading...</p>;
   return (
     <div className={styles.card}>

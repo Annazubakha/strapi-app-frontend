@@ -16,7 +16,6 @@ const TAGS = gql`
 export const SiteHeader = () => {
   const { data, isLoading } = useQuery(TAGS);
   if (isLoading) return <p> Loading...</p>;
-  console.log(data);
   return (
     <header className={styles.header}>
       <nav>
